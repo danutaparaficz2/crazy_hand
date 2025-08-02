@@ -1,0 +1,20 @@
+# Conda environment file for voice recognition
+# Use: conda env update --file environment.yml
+
+name: crazy_hand_voice
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - opencv
+  - scikit-learn
+  - pandas
+  - joblib
+  - portaudio  # Required for pyaudio on macOS/Linux
+  - pip:
+    - SpeechRecognition==3.10.0
+    - pyaudio==0.2.11
+    - mediapipe
